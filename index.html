@@ -225,13 +225,12 @@ th {
 // ANIMASI MUNCUL
 window.onload = function() {
 
+  // tombol dulu
   setTimeout(() => {
-    let box = document.getElementById("pwBox"); // WAJIB TAMBAH INI
-    box.style.opacity = 1;
-    box.style.transform = "translateY(0)";
-  }, 1500);
-
-};
+    let btnBox = document.getElementById("btnBox");
+    btnBox.style.opacity = 1;
+    btnBox.style.transform = "translateY(0)";
+  }, 800);
 
   // input setelahnya
   setTimeout(() => {
@@ -245,10 +244,28 @@ window.onload = function() {
 // DATA SISWA (EDIT DI SINI)
 var dataSiswa = [
   { nisn: "0023944032", nama: "Ahmad Sofyan", kelas: "XII", status: "LULUS" },
-  { nisn: "0076295579", nama: "Alifurrahman", kelas: "XII", status: "LULUS" },
-  { nisn: "0086915742", nama: "Anggun Putri Maulina", kelas: "XII", status: "LULUS" }
-  { nisn: "0089701525", nama: "Cahaya", kelas: "XII", status: "LULUS" }
-  { nisn: "0067646328", nama: "Anggun Putri Maulina", kelas: "XII", status: "LULUS" }
+  { nisn: "0076295579", nama: "Aliifurrahman", kelas: "XII", status: "LULUS" },
+  { nisn: "0086915742", nama: "Anggun Putri Maulina", kelas: "XII", status: "LULUS" },
+  { nisn: "0089701525", nama: "Cahaya", kelas: "XII", status: "LULUS" },
+  { nisn: "0067646328", nama: "Isniyeh", kelas: "XII", status: "LULUS" },
+  { nisn: "0069334384", nama: "Jamaludin", kelas: "XII", status: "LULUS" },
+  { nisn: "0079779421", nama: "Kamilatin Hasanah", kelas: "XII", status: "LULUS" },
+  { nisn: "0082239739", nama: "Kamilatus Solehah", kelas: "XII", status: "LULUS" },
+  { nisn: "0078576404", nama: "Lailatul Ramadhani", kelas: "XII", status: "LULUS" },
+  { nisn: "0082109875", nama: "Mochammad Tajul Arifin Billah", kelas: "XII", status: "LULUS" },
+  { nisn: "0075504624", nama: "Mohammad Dani", kelas: "XII", status: "LULUS" },
+  { nisn: "0053565767", nama: "Mohammad Firmansah", kelas: "XII", status: "LULUS" },
+  { nisn: "3053827000", nama: "Mohammad Rifain", kelas: "XII", status: "LULUS" },
+  { nisn: "0081859077", nama: "Mohammad Wakil", kelas: "XII", status: "LULUS" },
+  { nisn: "0079908124", nama: "Muhammad Rizal Asan Basri", kelas: "XII", status: "LULUS" },
+  { nisn: "0056497321", nama: "Muhammad Wesik", kelas: "XII", status: "LULUS" },
+  { nisn: "0037137326", nama: "Nora Shafirah", kelas: "XII", status: "LULUS" },
+  { nisn: "0085354427", nama: "Nur Azizeh Anggraeni", kelas: "XII", status: "LULUS" },
+  { nisn: "0073828227", nama: "Nurida Indriyani", kelas: "XII", status: "LULUS" },
+  { nisn: "0089716076", nama: "Nurul Mardiana", kelas: "XII", status: "LULUS" },
+  { nisn: "0075152148", nama: "Romi Ade Saputra", kelas: "XII", status: "LULUS" },
+  { nisn: "3079492088", nama: "Sefrina Auliyatul Fikriyah", kelas: "XII", status: "LULUS" },
+  { nisn: "0083122109", nama: "Zaskiyatul Jannah", kelas: "XII", status: "LULUS" }
 ];
 
 // CEK NISN
@@ -286,8 +303,3 @@ function cek() {
     alert("NISN tidak ditemukan!");
   }
 }
-
-</script>
-
-</body>
-</html>
