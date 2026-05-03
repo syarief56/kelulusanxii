@@ -255,7 +255,7 @@ function cek() {
 
   for (var i = 0; i < dataSiswa.length; i++) {
 
-    if (input === dataSiswa[i].nisn) {
+    if (parseInt(input) === parseInt(dataSiswa[i].nisn)) {
 
       document.getElementById("nama").innerText = dataSiswa[i].nama;
       document.getElementById("nisnH").innerText = dataSiswa[i].nisn;
