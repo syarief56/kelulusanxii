@@ -250,7 +250,7 @@ var dataSiswa = [
 
 // CEK NISN
 function cek() {
-  var input = document.getElementById("nisn").value;
+  var input = document.getElementById("nisn").value.trim();
   var ketemu = false;
 
   for (var i = 0; i < dataSiswa.length; i++) {
